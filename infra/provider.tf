@@ -5,5 +5,9 @@ terraform {
       version = "4.40.0"
     }
   }
-
+  backend "s3" {
+    bucket = "analytics-1032"
+    key = "1032/demo.state"
+    region = "eu-west-1"
+  }
 }
