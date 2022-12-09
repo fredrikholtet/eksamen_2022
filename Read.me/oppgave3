@@ -6,3 +6,4 @@ docker tag hello 244530008913.dkr.ecr.eu-west-1.amazonaws.com/(insert repo name)
 docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/(insert repo name):$rev
 
 man er også nødt til å sette opp secrets i action, og
+
