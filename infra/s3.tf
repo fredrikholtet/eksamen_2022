@@ -1,4 +1,4 @@
-resource " aws_s3_bucket_server_side_encryption_configuration" "_testigjen" {
+resource " aws_s3_bucket_server_side_encryption_configuration" "detfunkerikke" {
   bucket = aws_s3_bucket.analyticsbucket.bucket
   server_side_encryption_configuration {
     rule {
