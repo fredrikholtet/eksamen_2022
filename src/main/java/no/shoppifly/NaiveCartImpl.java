@@ -49,12 +49,11 @@ class NaiveCartImpl implements CartService {
     }
 
     public void onApplicationEvent(ApplicationReadyEvent applicationReadyEvent) {
-
         // Verdi av total
         Gauge.builder("carts_count", shoppingCarts,
                 Map::size).register(meterRegistry);
 
-        Gauge.builder("bank_sum", shoppingCarts,
+        Gauge.builder("carts_sum", shoppingCarts,
                         b -> b.values()
                                 .stream()
                                 .flatMap(cart -> cart.getItems().stream())
