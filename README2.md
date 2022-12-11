@@ -85,13 +85,13 @@ uavhengig av branch
 Oppgave 3.
 
 
-Hei, sensor for å kontroll på «Branch protection og status sjekker» går man i
+Hei, sensor. For å kontroll på «Branch protection og status sjekker» går man i
 
-• Settings -> Branches -> Add Branch protection rule
-• Setter branch main pattern til main
-• Require a pull request before merging
-• Require status check to pass before merging
-• Do not allow bypassing the above settings
+-  Settings -> Branches -> Add Branch protection rule 
+-  Setter branch main pattern til main 
+-  Require a pull request before merging 
+-  Require status check to pass before merging 
+-  Do not allow bypassing the above settings 
 
 
 Ingen kan pushe kode direkte på main branch, Nå kan vi ikke Merge en pull request inn i main uten
