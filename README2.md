@@ -111,18 +111,19 @@ er noe problemet. Jeg endret. yml fila og siden jeg hadde en push tag som kjørt
 pushet så kunne jeg se hvordan programmet oppførte seg. Jeg la til Secrets i koden og opprettet det
 i Github og lagret secrets på et sted som ingen noen gang får tak i det. Jeg innser nå at hver gang jeg
 pushet bruker det opp tiden, og jeg burde lagt til en 
-   build:
-      Script: blabla
-      Timeout: 1minute
+  - build:
+     - Script: blabla
+     - Timeout: 1minute
 
 Her er en liten bit av hva jeg la til for at det skulle fungere og disse endringene er i .guthub katalogen ->  docker.yml fila , 
 
 ![run-config](https://user-images.githubusercontent.com/69800718/206913067-72a7fb73-0d31-4ea9-9e55-b62e6abdc818.png)
 
 
-etter dette bygde jeg en container slik , - docker build . --tag <give the image a name>
-  - docker run <image tag used above>
-    Også bare prøvde jeg meg frem og feilsøkte og så at det fungerte som det skulle.
+etter dette bygde jeg en container slik ,
+- docker build . --tag <give the image a name>
+- docker run <image tag used above>
+- Også bare prøvde jeg meg frem og feilsøkte og så at det fungerte som det skulle.
 
 jeg la også til kode i Docker i rotkatalogen, men den er lik for alle.
 
@@ -134,25 +135,24 @@ jeg la også til kode i Docker i rotkatalogen, men den er lik for alle.
 til sitt eget ECR repo**
 
 
-Fork repoet, gå til setting -> secrets og new repository secrets
-Repo_name – navnet til aws ECR repoet du lagde
-Opprett egne secrets, da går man til aws og finner IAM finnr Security credentials
-Trykker på Create access Key, og lager Access key og secret access key og lagrer dem slik at man ikke
-mister dem, og viktig at de er sikkre.
-Gå i workflows og endre Run config, hvor Sensor må endre docker tag som vist nedenfor, og må
-fjerne <>
+Fork repoet, gå til
+   - settings -> secrets og new repository secrets
+   - Repo_name – navnet til aws ECR repoet du lagde
+   - Opprett egne secrets, da går man til aws og finner IAM finnr Security credentials
+   - Trykker på Create access Key, og lager Access key og secret access key og lagrer dem slik at man ikke mister dem, og viktig at de er sikkre.
+   - Gå i workflows og endre Run config, hvor Sensor må endre docker tag som vist nedenfor, og måfjerne <>
 
-docker tag hello 244530008913.dkr.ecr.eu-west-1.amazonaws.com/<insert sensor bruker>:$rev
+- docker tag hello 244530008913.dkr.ecr.eu-west-1.amazonaws.com/<insert sensor bruker>:$rev
 
-docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com//<insert sensor bruker>:$rev
+- docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com//<insert sensor bruker>:$rev
 
 Da skal vi Få GitHub Actions til å bygge & pushe et nytt Image hver gang noen lager en ny commit på
 main branch
 
 Push et container image til dit ECR repository
-docker build -t <ditt tagnavn> .
-docker tag <ditt tagnavn> 244530008913.dkr.ecr.eu-west-1.amazonaws.com/<ditt ECR repo navn>
-docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/<ditt ECR repo navn>
+- docker build -t <ditt tagnavn> .
+- docker tag <ditt tagnavn> 244530008913.dkr.ecr.eu-west-1.amazonaws.com/<ditt ECR repo navn>
+- docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/<ditt ECR repo navn>
 
 
 ## DEl 5) 
