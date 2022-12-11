@@ -7,6 +7,9 @@
 
 
 
+
+
+
 # DevOps med gode intensjoner
 
 ## Krav til leveransen
