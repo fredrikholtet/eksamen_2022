@@ -55,7 +55,7 @@ resource "aws_cloudwatch_dashboard" "main" {
           ]
         ],
         "period": 300,
-        "stat": "sum",
+        "stat": "Maximum",
         "region": "eu-west-1",
         "title": "checkout_carts.value"
       }
