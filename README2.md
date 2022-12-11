@@ -2,7 +2,9 @@
 ######################################
 
 
-Alle oppgavene er svart på under, det er lastet opp som pdf i eksamens wiseflow 
+Alle oppgavene er svart på under, 
+Kandidatnummer: 1032
+
 
 ### DEL 1 devops
 
