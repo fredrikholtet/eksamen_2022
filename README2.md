@@ -86,6 +86,7 @@ Oppgave 3.
 
 
 Hei, sensor for å kontroll på «Branch protection og status sjekker» går man i
+
 • Settings -> Branches -> Add Branch protection rule
 • Setter branch main pattern til main
 • Require a pull request before merging
