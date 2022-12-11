@@ -1,9 +1,0 @@
-Da må han gp til Amazone ECR, og oprette et nytt repo i høyre hjørne og gi det en unik id,
-deretter er han nødt til å endre docker,yml og Dockerfilen slik at han får en verdig som tilsier hans prosjekt siden mitt
-ECR er privat og han kan ikke bruke det, så han må endre i noen sted.
-Man er nødt til å gå inn i docker.yml og endre
-docker tag hello 244530008913.dkr.ecr.eu-west-1.amazonaws.com/(insert repo name):$rev
-docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/(insert repo name):$rev
-
-man er også nødt til å sette opp secrets i action, og
-
