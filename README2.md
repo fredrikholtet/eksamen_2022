@@ -60,7 +60,7 @@ Oppgave1.
 Starter med å endre ci.yml workflow fordi jeg vil ha den til å kjøres automatisk ved push til main.
 Ser at den feiler fordi det er feil i enhetstesten.
 
-![](../../../workflow0.1.png)
+![workflow0 1](https://user-images.githubusercontent.com/69800718/206912953-49137e15-54b1-4135-b4fb-6e5c3f76c1fb.png)
 
 
 
