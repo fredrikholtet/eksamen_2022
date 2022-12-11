@@ -2,7 +2,7 @@
 ######################################
 
 
-Alle oppgavene er svart på under, det er lastet opp som pdf fordi bla bla. 
+Alle oppgavene er svart på under, det er lastet opp som pdf i eksamens wiseflow 
 
 ### DEL 1 devops
 
