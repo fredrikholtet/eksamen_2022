@@ -69,14 +69,16 @@ Oppgave2.
 Deretter endrer jeg testen til å kjøre grønt siden testen skal asserte 0, siden Cart er tom. Pusher til
 main for å se at det kjøres hver gang det blir gjort et push og ser at workflows er oppe og går.
 
-![](../../../workflow1.png)
+![workflow1](https://user-images.githubusercontent.com/69800718/206912982-45fc88cf-9073-492a-bba0-f54af29f2294.png)
 
 
 
 Sjekker at workflowen skal kompilere javakoden og kjører enhetstester på hver eneste push,
 uavhengig av branch
 
-![](../../../branch1.png)
+
+![branch1](https://user-images.githubusercontent.com/69800718/206913018-28a24dce-9f64-4d9f-8b6b-b569bc21e896.png)
+
 
 
 
@@ -114,7 +116,8 @@ pushet bruker det opp tiden, og jeg burde lagt til en
 
 Her er en liten bit av hva jeg la til for at det skulle fungere og disse endringene er i .guthub katalogen ->  docker.yml fila , 
 
-![](../../../../Pictures/run-config.png)
+![run-config](https://user-images.githubusercontent.com/69800718/206913067-72a7fb73-0d31-4ea9-9e55-b62e6abdc818.png)
+
 
 etter dette bygde jeg en container slik , - docker build . --tag <give the image a name>
   - docker run <image tag used above>
