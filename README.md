@@ -1,3 +1,12 @@
+
+
+
+## Alle oppgavene er besvart og er levert i README2.me, det er også levert med en egen mappe med alle oppgavene #####
+
+
+
+
+
 # DevOps med gode intensjoner
 
 ## Krav til leveransen
