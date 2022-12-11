@@ -127,7 +127,7 @@ etter dette bygde jeg en container slik ,
 - docker run <image tag used above>
 - Også bare prøvde jeg meg frem og feilsøkte og så at det fungerte som det skulle.
 
-jeg la også til kode i Docker i rotkatalogen, men den er lik for alle.
+jeg la også til kode i DockerFile i rotkatalogen, men siden jeg endret den så trenger ikke sensor å gjøre noe med den.
 
 
 
